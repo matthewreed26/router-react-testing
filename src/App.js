@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { TextList } from './components/text-list/text-list.component';
+import { SearchBox } from './components/search-box/search-box.component';
 
 class App extends Component {
   constructor() {
@@ -29,8 +30,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <input type='search' placeholder='name search' 
-              onChange={ e => this.setState({ searchField: e.target.value })}></input>
+          <SearchBox placeholder='name search' handleChange={e => this.setState({ searchField: e.target.value })}></SearchBox>
           <TextList texts={filteredTexts}></TextList>
         </header>
       </div>
