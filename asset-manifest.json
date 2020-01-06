@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/routing-react-testing/static/css/main.d1b05096.chunk.css",
-    "main.js": "/routing-react-testing/static/js/main.b039121e.chunk.js",
-    "main.js.map": "/routing-react-testing/static/js/main.b039121e.chunk.js.map",
-    "runtime-main.js": "/routing-react-testing/static/js/runtime-main.37d19f26.js",
-    "runtime-main.js.map": "/routing-react-testing/static/js/runtime-main.37d19f26.js.map",
-    "static/js/2.bf1f5ef6.chunk.js": "/routing-react-testing/static/js/2.bf1f5ef6.chunk.js",
-    "static/js/2.bf1f5ef6.chunk.js.map": "/routing-react-testing/static/js/2.bf1f5ef6.chunk.js.map",
-    "index.html": "/routing-react-testing/index.html",
-    "precache-manifest.a252598a04ab9d2ebec0b9f5e21b1743.js": "/routing-react-testing/precache-manifest.a252598a04ab9d2ebec0b9f5e21b1743.js",
-    "service-worker.js": "/routing-react-testing/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/routing-react-testing/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.bf1f5ef6.chunk.js.LICENSE": "/routing-react-testing/static/js/2.bf1f5ef6.chunk.js.LICENSE",
-    "static/media/logo.svg": "/routing-react-testing/static/media/logo.5d5d9eef.svg"
+    "main.css": "/router-react-testing/static/css/main.d1b05096.chunk.css",
+    "main.js": "/router-react-testing/static/js/main.4c8cc757.chunk.js",
+    "main.js.map": "/router-react-testing/static/js/main.4c8cc757.chunk.js.map",
+    "runtime-main.js": "/router-react-testing/static/js/runtime-main.3385b375.js",
+    "runtime-main.js.map": "/router-react-testing/static/js/runtime-main.3385b375.js.map",
+    "static/js/2.bf1f5ef6.chunk.js": "/router-react-testing/static/js/2.bf1f5ef6.chunk.js",
+    "static/js/2.bf1f5ef6.chunk.js.map": "/router-react-testing/static/js/2.bf1f5ef6.chunk.js.map",
+    "index.html": "/router-react-testing/index.html",
+    "precache-manifest.0f61566af9497f7b489f65fb396e106a.js": "/router-react-testing/precache-manifest.0f61566af9497f7b489f65fb396e106a.js",
+    "service-worker.js": "/router-react-testing/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/router-react-testing/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.bf1f5ef6.chunk.js.LICENSE": "/router-react-testing/static/js/2.bf1f5ef6.chunk.js.LICENSE",
+    "static/media/logo.svg": "/router-react-testing/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.37d19f26.js",
+    "static/js/runtime-main.3385b375.js",
     "static/js/2.bf1f5ef6.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.b039121e.chunk.js"
+    "static/js/main.4c8cc757.chunk.js"
   ]
 }
