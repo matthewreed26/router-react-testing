@@ -14,6 +14,7 @@ function App() {
           <Route path='/other' component={HomePage} />
           <Route path='/other/:otherId' component={HomePage} />
           {/* :otherId matches dynamically and passes to HomePage props as props.match.params.otherId */}
+          {/* <Route path='/signIn' render={() => this.props.user ? (<Redirect to='/' />) : (<SignInAndSignupPage />)} /> */}
         </Switch>
       </header>
     </div>

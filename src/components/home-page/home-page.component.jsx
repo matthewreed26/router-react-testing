@@ -59,8 +59,8 @@ class HomePage extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  texts: state.text.texts
+const mapStateToProps = ({ text }) => ({
+  texts: text.texts
 });
 
 const mapDispatchToProps = dispatch => ({
