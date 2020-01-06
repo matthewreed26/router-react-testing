@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { TextList } from './components/text-list/text-list.component';
 
 class App extends Component {
   constructor() {
@@ -20,9 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          {
-    this.state.pageTexts.map(pageText => <div key={pageText.id}>{ `My name is ${pageText.name}` }</div>)
-          }
+          <TextList texts={this.state.pageTexts}></TextList>
         </header>
       </div>
     );
