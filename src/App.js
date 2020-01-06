@@ -12,12 +12,26 @@ class App extends Component {
       pageTexts: [],
       searchField: ''
     }
+
+    this.handleClickGetLogApp = this.handleClickGetUndefined.bind(this);
   }
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => this.setState({ pageTexts: users }))
+  }
+
+  handleChange = e => {
+    this.setState({ searchField: e.target.value })
+  };
+
+  handleClickGetUndefined() {
+    console.log(this);
+  }
+
+  handleClickGetLog() {
+    console.log("logging something");
   }
 
   render() {
@@ -30,7 +44,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <SearchBox placeholder='name search' handleChange={e => this.setState({ searchField: e.target.value })}></SearchBox>
+          <SearchBox placeholder='name search' handleChange={ this.handleChange }></SearchBox>
+          <button onClick={this.handleClickGetUndefined}>Log Undefined</button>
+          <button onClick={this.handleClickGetLog}>Log Something</button>
+          <button onClick={this.handleClickGetLogApp}>Log App</button>
           <TextList texts={filteredTexts}></TextList>
         </header>
       </div>
