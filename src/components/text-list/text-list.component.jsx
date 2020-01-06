@@ -1,6 +1,7 @@
 import React from 'react';
 import { TextSection } from '../text-section/text-section.component';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 const TextList = ({ texts, history }) => {
     return <div>
@@ -11,4 +12,8 @@ const TextList = ({ texts, history }) => {
     </div>;
 };
 
-export default withRouter(TextList);
+const mapStateToProps = state => ({
+    texts: state.text.texts
+})
+
+export default connect(mapStateToProps)(withRouter(TextList));
