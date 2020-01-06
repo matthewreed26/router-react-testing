@@ -6,18 +6,21 @@ class App extends Component {
   constructor() {
     super();
 
-    this.state = { pageText: 
-      `<p>
-      Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>` 
+    this.state = { pageTexts: 
+      [
+        {
+          id: '1',
+          displayText: 'fun'
+        },
+        {
+          id: '2',
+          displayText: 'more fun'
+        },
+        {
+          id: '3',
+          displayText: 'most fun'
+        }
+      ]
     }
   }
 
@@ -26,8 +29,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <div dangerouslySetInnerHTML={{__html: this.state.pageText}}></div>
-          <button onClick={() => this.setState({ pageText: 'Super Fun text' })}>Change Text</button>
+          {
+    this.state.pageTexts.map(pageText => <div key={pageText.id}>{ pageText.displayText }</div>)
+          }
         </header>
       </div>
     );
