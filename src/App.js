@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { TextList } from './components/text-list/text-list.component';
+import { TextSection } from './components/text-section/text-section.component';
 
 class App extends Component {
   constructor() {
@@ -21,7 +22,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <TextList texts={this.state.pageTexts}></TextList>
+          <TextList texts={this.state.pageTexts}>
+            {
+              this.state.pageTexts.map(pageText => <TextSection text={pageText}></TextSection>)
+            }
+          </TextList>
         </header>
       </div>
     );
